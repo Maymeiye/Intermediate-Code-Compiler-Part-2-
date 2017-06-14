@@ -1,0 +1,51 @@
+	push 0
+	pop #0
+	push #0
+	pop #1
+	push #1
+	push 1
+	eq
+	ifF goto  2
+	push #0
+	push 1
+	add
+	pop #0
+	goto  1
+2:
+	push #1
+	push 2
+	eq
+	ifF goto  3
+	push #0
+	push 2
+	add
+	pop #0
+	goto  1
+3:
+	push #1
+	push 3
+	eq
+	ifF goto  4
+	push #0
+	push 3
+	add
+	pop #0
+	goto  1
+4:
+	push #1
+	push 4
+	eq
+	ifF goto  5
+	push #0
+	push 4
+	add
+	pop #0
+	goto  1
+5:
+	push #0
+	push 5
+	add
+	pop #0
+1:
+	push #0
+	print
